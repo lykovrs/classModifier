@@ -1,2 +1,4 @@
 # classModifier
-Css clases framework
+Css classes framework
+
+Напишите свой небольшой js-фреймворк работы с css классами dom элементов. Итоговая функциональность и интерфейсы отдаются на ваше усмотрение.

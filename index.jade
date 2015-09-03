@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Class Modifier
+        link(rel="stylesheet",href="style.css")
+    body.class-class-class.class-class
+        div.main
+            h1.main__header.main__header_t_big Class Modifier
+            code.
+                window.CM = new ClassModifier();
+            h2.main__header.main__header_t_small Инициализация:
+            code.
+                CM.nod('h1').cls('newAddClass');
+
+            h2.main__header.main__header_t_small Добавление класса:
+            code.
+                CM.nod('h1').cls('newAddClass');
+
+            h2.main__header.main__header_t_small Получение значения атрибута класса:
+            code.
+                CM.nod('h1').cls();
+
+            h2.main__header.main__header_t_small Удаление значений атрибута класса:
+            code.
+                CM.nod('h1').rmCls();
+
+            h2.main__header.main__header_t_small Удаление конкретного значения атрибута класса:
+            code.
+                CM.nod('h1').rmCls('deleteClassName');
+
+        script(src='classModifier.js')
+        script.
+            var a = CM.nod('body').cmlz(),
+                b = CM.nod('h1').cls('newAddClass'),
+                c = CM.nod('h1').cls(),
+                e = CM.nod('.classClassClass').rmCls('classClass');
+            console.log(c);
+
+
