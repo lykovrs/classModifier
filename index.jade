@@ -7,11 +7,10 @@ html(lang='en')
     body.class-class-class.class-class
         div.main
             h1.main__header.main__header_t_big Class Modifier
-            code.
-                window.CM = new ClassModifier();
+
             h2.main__header.main__header_t_small Инициализация:
             code.
-                CM.nod('h1').cls('newAddClass');
+                window.CM = new ClassModifier();
 
             h2.main__header.main__header_t_small Добавление класса:
             code.
@@ -31,6 +30,7 @@ html(lang='en')
 
         script(src='classModifier.js')
         script.
+            window.CM = new ClassModifier();
             var a = CM.nod('body').cmlz(),
                 b = CM.nod('h1').cls('newAddClass'),
                 c = CM.nod('h1').cls(),
